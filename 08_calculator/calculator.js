@@ -18,12 +18,21 @@ const multiply = function(...numbers) {
   return product;
 };
 
-const power = function() {
-	
+const power = function(a, b) {
+	return a ** b;
 };
 
-const factorial = function() {
-	
+const factorial = function(a) {
+  if(a === 0) {
+    return 1;
+  } 
+  else {
+    let result = 1;
+    for(let i = 0; i < a; i++) {
+      result *= (a - i);
+    };
+    return result;
+  };
 };
 
 // Do not edit below this line
